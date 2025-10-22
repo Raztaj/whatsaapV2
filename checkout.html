@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الطلب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1><a href="index.html">متجرنا</a></h1>
+                <a href="checkout.html" class="cart-icon">
+                    🛒
+                    <span id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>سلة التسوق</h2>
+        <div class="checkout-container">
+            <div id="cart-items">
+                <!-- عناصر السلة ستعرض هنا -->
+            </div>
+            <div class="checkout-summary">
+                <h3>ملخص الطلب</h3>
+                <p>الإجمالي: <span id="total-price">0</span> د.ل</p>
+                <div class="form-group">
+                    <label for="region">اختر منطقتك:</label>
+                    <select id="region">
+                        <optgroup label="📍 السودان">
+                            <option value="الخرطوم - الكلاكلة">الخرطوم - الكلاكلة</option>
+                            <option value="الخرطوم - أم درمان">الخرطوم - أم درمان</option>
+                            <option value="الخرطوم - بحري">الخرطوم - بحري</option>
+                            <option value="مدني">مدني</option>
+                            <option value="القضارف">القضارف</option>
+                            <option value="بورتسودان - مندوب 1">بورتسودان - مندوب 1</option>
+                            <option value="بورتسودان - مندوب 2">بورتسودان - مندوب 2</option>
+                            <option value="بورتسودان - مندوب 3">بورتسودان - مندوب 3</option>
+                            <option value="بورتسودان - مندوب 4">بورتسودان - مندوب 4</option>
+                            <option value="بورتسودان - مندوب 5">بورتسودان - مندوب 5</option>
+                            <option value="بورتسودان - مندوب 6">بورتسودان - مندوب 6</option>
+                            <option value="سواكن">سواكن</option>
+                            <option value="كسلا - مندوب 1">كسلا - مندوب 1</option>
+                            <option value="كسلا - مندوب 2">كسلا - مندوب 2</option>
+                            <option value="حلفا الجديدة">حلفا الجديدة</option>
+                            <option value="سنار / سنجة / الدمازين">سنار / سنجة / الدمازين</option>
+                            <option value="شندي">شندي</option>
+                            <option value="ربك - مندوب 1">ربك - مندوب 1</option>
+                            <option value="ربك - مندوب 2">ربك - مندوب 2</option>
+                            <option value="كوستي">كوستي</option>
+                            <option value="الشمالية / دنقلا">الشمالية / دنقلا</option>
+                            <option value="مروي / كريمة">مروي / كريمة</option>
+                            <option value="عطبرة / بربر / الدامر">عطبرة / بربر / الدامر</option>
+                        </optgroup>
+                        <optgroup label="✈️ دولي">
+                            <option value="مصر">مصر</option>
+                            <option value="السعودية - الرياض">السعودية - الرياض</option>
+                            <option value="الإمارات">الإمارات</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button id="send-whatsapp">أرسل الطلب عبر واتساب</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 متجرنا. كل الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
