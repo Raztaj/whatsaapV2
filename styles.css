@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* --- Global --- */
 :root {
-    --primary-color: #1a1a1a;
+    --primary-color: #5A1F1F;
     --secondary-color: #4a4a4a;
-    --background-color: #f6f6f7;
+    --background-color: #EFE1C5;
     --surface-color: #ffffff;
-    --accent-color: #007bff;
+    --accent-color: #5A1F1F;
     --success-color: #25D366; /* WhatsApp Green */
     --danger-color: #dc3545;
     --border-color: #e5e5e5;
-    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family: 'Amiri', serif;
 }
 
 body {
@@ -144,7 +146,14 @@ h2 {
 }
 
 .product-card button:hover {
-    background-color: #0056b3;
+    background-color: #4a1a1a;
+}
+
+.not-available {
+    color: var(--danger-color);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
 }
 
 
